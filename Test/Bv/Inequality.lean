@@ -35,5 +35,6 @@ theorem ineq_unit_6 (x y z : BitVec 32) (h1 : BitVec.slt x y) (h2 : BitVec.slt y
   bv_decide
 
 set_option trace.bv true in
-theorem ineq_unit_7 (x y z : BitVec 32) (h1 : BitVec.sle x y) (h2 : BitVec.sle y z)  : BitVec.sle x z := by
+set_option bv.graphviz true in
+theorem ineq_unit_7 (x y z : BitVec 2) (h1 : BitVec.sle x y) (h2 : BitVec.sle y z)  : BitVec.sle x z := by
   bv_decide
